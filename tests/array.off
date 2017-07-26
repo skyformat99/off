@@ -1,0 +1,10 @@
+;; array.off --- simple off array examples
+
+;; Example array
+my_array {1|2|3|Hello, World!|https://www.kernel.org/|200|<p>Hello</p>}
+
+;; Very long array
+long_array {Hello|World|10|1|11|12|34|34|12|233|3447|2324}
+
+;; Person
+john {doe|11|https://jdoe.foo|+000000000}

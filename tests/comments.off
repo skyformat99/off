@@ -1,0 +1,9 @@
+;;
+; This is an example for comments in off
+;;
+
+; I'm a comment
+version 1
+
+;; Another one
+name awesome-name ; Comment in the end of the line

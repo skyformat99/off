@@ -1,0 +1,7 @@
+; boolean.off - boolean examples in off
+
+download_images true
+enable_colors true
+simple_mode false
+disable_http2 true
+remove_on_exit false

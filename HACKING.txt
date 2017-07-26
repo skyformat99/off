@@ -1,0 +1,69 @@
+Liboff - Contributing
+=====================
+
+This file is meant to give you a brief overview of coding style and other
+concerns when hacking on liboff. If you are interested in contributing, please
+read this file. 
+
+The original document written by the pacman development team http://git.archlinux.org.
+
+Coding Style
+------------
+
+1.  All code should be indented with tabs. (Ignore the use of only spaces in
+    this file.) A tab size of two spaces is used when calculating line widths,
+    which should be a maximum of 80 characters. By default, source files
+    contain the following Vim modeline:
++
+[source,C]
+-------------------------------------------
+/* vim: set noet: */
+-------------------------------------------
+
+2.  When opening new blocks such as 'while', 'if', or 'for', leave the opening
+    brace on the same line as the beginning of the codeblock. The closing brace
+    gets its own line (the only exception being 'else'). Do not use extra
+    spaces around the parentheses of the block. ALWAYS use opening and closing
+    braces, even if it's just a one-line block. This reduces future error when
+    blocks are expanded beyond one line.
+
+3.  When declaring a new function, put the opening and closing braces on their
+    own line. Also, when declaring a pointer, do not put a space between the
+    asterisk and the variable name.
+
+-------------------------------------------
+
+4.  Comments should be ANSI-C89 compliant. That means no `// Comment` style;
+    use only `/* Comment */` style.
+
+    /* This is a comment */
+       NOT
+    // This is a comment
+
+5.  Return statements should *not* be written like function calls.
+
+    return 0;
+       NOT
+    return(0);
+
+6.  When using strcmp() (or any function that returns 0 on success) in a
+    conditional statement, use != 0 or == 0 and not the negation (!) operator.
+    It reads much cleaner for humans (using a negative to check for success is
+    confusing) and the compiler will treat it correctly anyway.
+
+    if(strcmp(a, b) == 0)
+       NOT
+    if(!strcmp(a, b))
+
+7.  Use spaces around almost all arithmetic, comparison and assignment
+    operators and after all ',;:' separators.
+
+	foobar[2 * size + 1] = function(a, 6);
+	   NOT
+	foobar[2*size+1]=function(a,6);
+
+	for(a = 0; a < n && n > 0; a++, n--) {}
+	   NOT
+	for(a=0;a<n&&n>0;a++,n--) {}
+
+-- EOF

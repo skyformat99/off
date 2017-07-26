@@ -1,0 +1,17 @@
+;; Example configuration file in off
+;; the keys are meaningless and just proof of concept
+
+;; Global 
+access_token 1234
+base_url https://api.foo.bar
+
+;; Create history file
+history true
+history_size 10000
+
+;; Locations
+config_location /home/user/.config/
+save_files false 
+
+;; Example array
+user {username|usermail@foo.bar|http://userweb.site/}

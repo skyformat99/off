@@ -1,0 +1,5 @@
+;; integer.off: integer examples in off
+
+age 5
+id 64
+int_array {1|2|3|4|5|6|7|9|10|11}

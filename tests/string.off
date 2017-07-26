@@ -1,0 +1,6 @@
+;; string.off: examples of string values in off
+
+name John
+last_name Doe
+email_address john@foo.bar
+pgp 0xDEADBEEF
