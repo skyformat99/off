@@ -19,9 +19,9 @@
 #define OFF_ARRAY_OPEN               0x7b
 #define OFF_ARRAY_CLOSE              0x7d
 #define OFF_ARRAY_ELEMENT_SEPARATOR  0x7c
-#define OFF_SYNTAX_OK                0xbb1
-#define OFF_SYNTAX_PASS              0xbb2
-#define OFF_SYNTAX_INVALID           0xbb3
+#define OFF_SYNTAX_OK 0x03
+#define OFF_SYNTAX_PASS 0x02
+#define OFF_SYNTAX_INVALID 0x01
 
 typedef enum {
   OFF_STATE_IN_KEY=1,
